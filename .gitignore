@@ -1,0 +1,14 @@
+# runs & artifacts
+runs/
+data/
+artifacts/
+
+# local smoke-test venv + model caches
+.venv-smoke/
+.hf-cache/
+__pycache__/
+*.pyc
+
+# secrets / credentials
+.kaggle/
+.env

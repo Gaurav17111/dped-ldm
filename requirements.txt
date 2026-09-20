@@ -1,0 +1,14 @@
+# DPED -> DSLR-quality latent diffusion enhancement
+# Tested against: Python 3.10, CUDA 12.x (Kaggle T4 x2 / P100)
+torch>=2.1,<2.6
+torchvision>=0.16
+diffusers==0.31.0
+transformers==4.44.2
+accelerate>=0.34.0
+safetensors>=0.4.3
+bitsandbytes>=0.43.1        # 8-bit AdamW (falls back to torch.optim.AdamW if missing)
+scipy>=1.11
+Pillow>=10.0
+tqdm>=4.66
+kagglehub>=0.2.5            # optional: DPED download outside Kaggle
+lpips>=0.1.4                # optional: only needed for metrics --lpips
